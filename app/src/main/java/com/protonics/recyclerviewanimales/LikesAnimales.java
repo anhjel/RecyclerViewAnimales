@@ -6,6 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.protonics.recyclerviewanimales.adapter.AnimalesAdapter2;
+import com.protonics.recyclerviewanimales.pojo.Animales;
+
 import java.util.ArrayList;
 
 public class LikesAnimales extends AppCompatActivity {
@@ -16,10 +19,11 @@ public class LikesAnimales extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_likes_animales);
-        Toolbar miActionBar = (Toolbar) findViewById(R.id.miActionBar2);
+// -------------------------------tool bar------------------------------------
+        Toolbar miActionBar = (Toolbar) findViewById(R.id.miActionBar);
         setSupportActionBar(miActionBar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+//-----------------------------------------------------------------------------
         listaAnimales= (RecyclerView) findViewById(R.id.rvAnimales2);//SE INSTAC CON EL RW DEL activity_likes_animales.xml
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);

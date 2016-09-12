@@ -1,4 +1,4 @@
-package com.protonics.recyclerviewanimales;
+package com.protonics.recyclerviewanimales.pojo;
 
 /**
  * Created by Angel on 03/09/2016.

@@ -17,16 +17,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:parentActivityName=".MainActivity"
             android:name=".LikesAnimales"
             android:label="5 Likes"
-            >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity">
-            </meta-data>
-
+                android:value=".MainActivity" />
         </activity>
+        <activity android:name=".toolbar.Contacto"
+            android:label="Contacto"
+            android:parentActivityName=".MainActivity"
+            ></activity>
+        <activity android:name=".toolbar.AcercaDe"
+            android:label="A cerca de"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

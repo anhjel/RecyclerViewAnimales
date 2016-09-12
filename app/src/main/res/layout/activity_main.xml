@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.protonics.recyclerviewanimales.MainActivity">
-   <include android:id="@+id/miActionBar"
-      layout="@layout/action_bar">
-   </include>
 
-   <android.support.v7.widget.RecyclerView
-       android:paddingBottom="@dimen/activity_vertical_margin"
-       android:paddingLeft="@dimen/activity_horizontal_margin"
-       android:paddingRight="@dimen/activity_horizontal_margin"
-       android:paddingTop="@dimen/activity_vertical_margin"
+
+
+
+   <android.support.design.widget.AppBarLayout
        android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:id="@+id/rvAnimales"
-       android:layout_below="@id/miActionBar">
+       android:layout_height="wrap_content"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+       >
 
-   </android.support.v7.widget.RecyclerView>
+      <android.support.v7.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/toolBar"
+          app:layout_scrollFlags="scroll|enterAlways">
+      </android.support.v7.widget.Toolbar>
+
+      <android.support.design.widget.TabLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/tabLayout"
+          >
+      </android.support.design.widget.TabLayout>
+
+      <android.support.v4.view.ViewPager
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/viewPager"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior"
+          >
+
+      </android.support.v4.view.ViewPager>
 
 
 
-</RelativeLayout>
+
+
+   </android.support.design.widget.AppBarLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

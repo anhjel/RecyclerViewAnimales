@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.protonics.recyclerviewanimales.LikesAnimales">
-    <include android:id="@+id/miActionBar2"
-        layout="@layout/action_bar_2">
+    <include android:id="@+id/miActionBar"
+        layout="@layout/action_bar">
     </include>
 
     <android.support.v7.widget.RecyclerView
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rvAnimales2"
-        android:layout_below="@id/miActionBar2">
+        android:layout_below="@id/miActionBar">
     </android.support.v7.widget.RecyclerView>
 
 

@@ -1,7 +1,6 @@
-package com.protonics.recyclerviewanimales;
+package com.protonics.recyclerviewanimales.adapter;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +9,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.protonics.recyclerviewanimales.pojo.Animales;
+import com.protonics.recyclerviewanimales.R;
 
 import java.util.ArrayList;
 

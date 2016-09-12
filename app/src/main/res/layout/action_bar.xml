@@ -9,13 +9,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
     >
-<ImageButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/five_star_hote"
-    android:id="@+id/fiveStarBtn"
-    android:layout_marginLeft="50dp"
-    />
+
 
 
 
