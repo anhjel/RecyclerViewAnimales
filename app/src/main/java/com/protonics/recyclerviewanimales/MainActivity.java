@@ -36,15 +36,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //----------------------------
-
         toolbar = (Toolbar) findViewById(R.id.toolBar);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager)  findViewById(R.id.viewPager);
-
         setUpViewPager();
-
-
         if (toolbar != null){
             setSupportActionBar(toolbar);
         }
@@ -100,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
         return fragments;
 
     }
+
+
     private  void  setUpViewPager(){
 
         viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(),agregarFragments()));
