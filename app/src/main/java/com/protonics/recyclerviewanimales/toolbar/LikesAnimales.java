@@ -1,4 +1,4 @@
-package com.protonics.recyclerviewanimales;
+package com.protonics.recyclerviewanimales.toolbar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.protonics.recyclerviewanimales.R;
 import com.protonics.recyclerviewanimales.adapter.AnimalesAdapter2;
 import com.protonics.recyclerviewanimales.pojo.Animales;
 

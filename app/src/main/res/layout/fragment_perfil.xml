@@ -5,10 +5,18 @@
     tools:context="com.protonics.recyclerviewanimales.fragment.PerfilFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="70dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
-        android:paddingTop="300dp"/>
+        android:id="@+id/rvAnimales2"
+        >
+    </android.support.v7.widget.RecyclerView>
 
 </FrameLayout>
